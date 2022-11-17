@@ -2,3 +2,78 @@
   margin: 0;
   padding: 0;
 }
+header {
+  height: 6rem;
+  background: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  font-size: 0;
+}
+header h1 a img {
+  width: 10rem;
+  height: 4.5rem;
+}
+header .icon {
+  font-size: 0;
+}
+header .icon img {
+  width: 3rem;
+  height: 3.5rem;
+  margin-left: 1.5rem;
+}
+.rentalAddr {
+  height: 4rem;
+  line-height: 4rem;
+  background: #ffffff;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #504f4f;
+}
+.rentalAddr p {
+  font-size: 1.2rem;
+}
+.rentalAddr p span {
+  color: #080808;
+}
+section .secondContent {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+section .secondContent li {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ff8a00;
+  display: flex;
+  align-items: center;
+}
+section .secondContent li:last-of-type {
+  border-bottom: none;
+}
+section .secondContent li .left {
+  margin-right: 3rem;
+}
+section .secondContent li .left img {
+  width: 10rem;
+  height: 10rem;
+}
+section .secondContent li .right {
+  width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+section .secondContent li .right h2 {
+  font-size: 1.6rem;
+}
+section .secondContent li .right p {
+  color: #000;
+  line-height: 2.1rem;
+}
+section .secondContent li .right p:first-of-type {
+  margin-top: 0.5rem;
+}
+section .secondContent li .right p strong {
+  color: #ff8a00;
+  margin-left: 2rem;
+}
