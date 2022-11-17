@@ -125,6 +125,18 @@ nav .list ul a span {
   top: 0.6rem;
   left: 5rem;
 }
+nav .list ul .active {
+  color: #FF8A00;
+}
+nav .list ul .active span {
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #FF8A00;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+}
 nav .someList {
   width: 100%;
   z-index: 4;

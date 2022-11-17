@@ -1,13 +1,14 @@
-var mb = document.querySelector('.mb');
-var area = document.querySelector('.area');
-var price = document.querySelector('.price');
-var house = document.querySelector('.house');
-var more = document.querySelector('.more');
-var a1 = document.querySelector('.a1');
-var p1 = document.querySelector('.p1');
-var h1 = document.querySelector('.h1');
-var m1 = document.querySelector('.m1');
-var list = document.querySelector('.list');
+let mb = document.querySelector('.mb');
+let area = document.querySelector('.area');
+let price = document.querySelector('.price');
+let house = document.querySelector('.house');
+let more = document.querySelector('.more');
+let a1 = document.querySelector('.a1');
+let p1 = document.querySelector('.p1');
+let h1 = document.querySelector('.h1');
+let m1 = document.querySelector('.m1');
+let list = document.querySelector('.list');
+// 直接写的方法
 touch.on(a1, 'tap', function () {
     area.style.display = 'flex';
     price.style.display = 'none';
@@ -80,3 +81,12 @@ touch.on(m1, 'tap', function () {
         list.style.left = '0';
     })
 })
+let as = document.querySelector('.list').querySelectorAll('a');
+console.log(as);
+as.forEach((item, index) => {
+
+    touch.on(as, 'tap', function () {
+        as[index].className = '';
+        this.className = 'active';
+    })
+});
