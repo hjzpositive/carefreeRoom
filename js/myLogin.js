@@ -1,25 +1,39 @@
+// 我的登录 登录后显示的页面
+window.onload = function () {
 
-// 获取用户名
-var user = document.getElementById('login')
+    var login = document.getElementById('login');
+    var user = localStorage.getItem('user');
+    var islogin = localStorage.getItem('islogin');
+    if (islogin) {
+        var str = `<p>欢迎您，${user}</p>`;
+        login.innerHTML = str;
+        login.id = 'login';
+    }
+}
 
-// 获取退出登录
-var tc = document.getElementById('tuichu')
-// 获取Cookie 里面存放的账号
-var phone_1 = getCookie('phone')
 
-// if (getCookie('phone')) {
-//     user.innerHTML = `欢迎您！${getCookie('phone')}`
+
+
+// 获取退出登录按钮
+// var btn = document.getElementsByClassName("tuichu")[0];
+// btn.onclick = function () {
+//     alert('确定要退出登录吗？');
+//     window.location.href = '../1-my.html'
 // }
 
-quit.onclick = function () {
-    if (user.innerHTML.length > 3) {
-        var affirm = confirm('您确定要退出登录吗？')
-        if (affirm) {
-            clearCookie()
-            location.href = './my.html'
-        }
-    } else {
-        alert('您还未登录！！！')
-    }
 
-}
+
+
+// var user = document.getElementsByClassName("login")[0];
+
+// // 判断用户是否登录成功
+// if (window.localStorage.getItem("true")) {
+//     user.innerHTML = "欢迎你，" + window.localStorage.getItem("true");
+//     // 退出登录功能
+//     btn.onclick = function () {
+//         window.localStorage.removeItem("true");
+//         setTimeout(function () {
+//             window.location.href = "./my.html";
+//         }, 1000);
+//     };
+// }

@@ -37,17 +37,31 @@ header .icon img {
 .rentalAddr p span {
   color: #080808;
 }
-.registerForm form ul {
-  list-style: none;
+.registerForm .title {
+  display: flex;
+  justify-content: space-around;
 }
-.registerForm form ul li {
-  height: 4rem;
+.registerForm .title li {
+  line-height: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 50%;
+}
+.registerForm .title .active {
+  border-bottom: 4px solid #ff8a00;
+}
+.registerForm ul {
+  list-style: none;
   border-bottom: 1px solid #dcdcdc;
 }
-.registerForm form .customLogin ul li {
-  position: relative;
+.registerForm ul .click {
+  height: 4rem;
 }
-.registerForm form .customLogin ul li input {
+.registerForm .customLogin ul li {
+  position: relative;
+  border-top: 0.1rem solid #dcdcdc;
+}
+.registerForm .customLogin ul li input {
   border: none;
   outline: none;
   width: 100%;
@@ -56,12 +70,12 @@ header .icon img {
   padding-left: 1.5rem;
   font-size: 1.1rem;
 }
-.registerForm form .customLogin ul li span {
+.registerForm .customLogin ul li span {
   position: absolute;
   top: 1.2rem;
   right: 3rem;
 }
-.registerForm form .customLogin .registerBtn {
+.registerForm .customLogin .registerBtn {
   width: 30rem;
   height: 4rem;
   background: #ff8a00;
@@ -72,26 +86,27 @@ header .icon img {
   margin-top: 1.5rem;
   margin-left: 3rem;
 }
-.registerForm form .customLogin .tiShi {
+.registerForm .customLogin .tiShi {
   margin: 1.5rem 1rem 0;
 }
-.registerForm form .customLogin .tiShi a {
+.registerForm .customLogin .tiShi a {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.registerForm form .customLogin .tiShi a:first-of-type {
+.registerForm .customLogin .tiShi a:first-of-type {
   float: left;
   color: #ff8a00;
 }
-.registerForm form .customLogin .tiShi a:last-of-type {
+.registerForm .customLogin .tiShi a:last-of-type {
   float: right;
   color: #666;
 }
-.registerForm form .fastLogin ul li {
+.registerForm .fastLogin ul li {
   height: 4rem;
   position: relative;
+  border-top: 0.1rem solid #dcdcdc;
 }
-.registerForm form .fastLogin ul li input {
+.registerForm .fastLogin ul li input {
   border: none;
   outline: none;
   width: 100%;
@@ -100,15 +115,15 @@ header .icon img {
   padding-left: 1.5rem;
   font-size: 1.1rem;
 }
-.registerForm form .fastLogin ul li span {
+.registerForm .fastLogin ul li span {
   position: absolute;
   top: 1.2rem;
   right: 3rem;
 }
-.registerForm form .fastLogin ul .mima {
+.registerForm .fastLogin ul .mima {
   position: relative;
 }
-.registerForm form .fastLogin ul .mima a {
+.registerForm .fastLogin ul .mima a {
   text-decoration: none;
   color: #616161;
   position: absolute;
@@ -118,7 +133,7 @@ header .icon img {
   border: 1px solid #dcdcdc;
   padding: 0.8rem 1rem;
 }
-.registerForm form .fastLogin .registerBtn {
+.registerForm .fastLogin .registerBtn {
   width: 30rem;
   height: 4rem;
   background: #ff8a00;
@@ -129,18 +144,18 @@ header .icon img {
   margin-top: 1.5rem;
   margin-left: 3rem;
 }
-.registerForm form .fastLogin .tiShi {
+.registerForm .fastLogin .tiShi {
   margin: 1.5rem 1rem 0;
 }
-.registerForm form .fastLogin .tiShi a {
+.registerForm .fastLogin .tiShi a {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.registerForm form .fastLogin .tiShi a:first-of-type {
+.registerForm .fastLogin .tiShi a:first-of-type {
   float: left;
   color: #ff8a00;
 }
-.registerForm form .fastLogin .tiShi a:last-of-type {
+.registerForm .fastLogin .tiShi a:last-of-type {
   float: right;
   color: #666;
 }

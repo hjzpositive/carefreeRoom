@@ -96,7 +96,7 @@ header .icon img {
 .userList ul li:last-of-type {
   border-bottom: none;
 }
-.userList button {
+.userList a button {
   width: 30rem;
   height: 4rem;
   line-height: 4rem;

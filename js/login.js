@@ -19,11 +19,12 @@ for (var i = 0; i < lis.length; i++) {
     }
 }
 
+
 //普通登录
 var input_ = document.getElementsByClassName('input1')[0];
 var input_1 = document.getElementsByClassName('input2')[0];
 var tshi_ = document.getElementsByClassName('ts');
-console.log(input_);
+// console.log(input_);
 // console.log(tshi_[0].innerHTML);
 var iphoneage = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/
 var passwordage = /^[a-z0-9]+$/i;
@@ -33,7 +34,7 @@ input_.onfocus = function () {
     tshi_[0].style.display = 'red';
 }
 input_.onblur = function () {
-    console.log(iphoneage.test(input_.value));
+    // console.log(iphoneage.test(input_.value));
     if (iphoneage.test(input_.value)) {
         // alert('111')
         tshi_[0].innerHTML = '手机格式输入正确';
@@ -52,6 +53,27 @@ input_1.onblur = function () {
         tshi_[1].innerHTML = '密码输入错误';
     }
 }
+
+
+var btn = document.getElementsByClassName('registerBtn')[0];
+btn.onclick = function () {
+    // console.log('111');
+    getCookie('phone');
+    getCookie('pas');
+    if (input_.value == getCookie('phone') && input_1.value == getCookie('pas')) {
+        // console.log('111');
+        localStorage.setItem('user', input_.value);
+        localStorage.setItem('pass', input_1.value);
+        localStorage.setItem('islogin', true);
+        alert('登录成功');
+        window.location.href = 'http://127.0.0.1:5500/carefreeRoom/1-myLogin.html'
+    } else {
+        alert('账号或密码错误');
+    }
+}
+console.log(btn);
+
+
 // 验证码登录
 
 var input_2 = document.getElementsByClassName('input3')[0];
@@ -65,7 +87,7 @@ code.onclick = function () {
     clearInterval(time);
     alert('验证码' + num)
     var time = setInterval(function () {
-        min--
+        min--;
         if (min > 0) {
             code.innerHTML = '(' + min + '秒)重发';
         }
@@ -81,3 +103,17 @@ input_3.onblur = function () {
     }
 }
 
+var btn1 = document.getElementsByClassName('registerBtn')[1];
+btn1.onclick = function () {
+    // console.log('111');
+    getCookie('phone');
+    if (input_2.value == getCookie('phone') && input_3.value == num) {
+        // console.log('111');
+        localStorage.setItem('user', input_2.value);
+        localStorage.setItem('islogin', true);
+        alert('登录成功');
+        window.location.href = 'http://127.0.0.1:5500/carefreeRoom/1-myLogin.html'
+    } else {
+        alert('账号或验证码错误');
+    }
+}

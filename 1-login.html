@@ -24,44 +24,43 @@
         <p><strong>首页</strong> > <span>我的</span> > <span>登录</span></p>
     </section>
     <section class="registerForm login">
-        <form action="#">
-            <ul class="title">
-                <li class="active click">普通登录</li>
-                <li class="click">验证码快捷登录</li>
+        <ul class="title">
+            <li class="active click">普通登录</li>
+            <li class="click">验证码快捷登录</li>
+        </ul>
+
+        <div class="customLogin act ">
+            <ul>
+                <li>
+                    <input type="text" class="input1" placeholder="请输入手机号码" />
+                    <span class="ts"></span>
+                </li>
+                <li><input type="password" class="input2" placeholder="请输入密码" />
+                    <span class="ts"></span>
+                </li>
             </ul>
-            <div class="customLogin act ">
-                <ul>
-                    <li>
-                        <input type="text" class="input1" placeholder="请输入手机号码" />
-                        <span class="ts"></span>
-                    </li>
-                    <li><input type="password" class="input2" placeholder="请输入密码" />
-                        <span class="ts"></span>
-                    </li>
-                </ul>
-                <button class="registerBtn">立即登录</button>
-                <div class="tiShi">
-                    <a href="../carefreeRoom/1-register.html">立即注册</a>
-                    <a href="../carefreeRoom/1-findPassWord.html">忘记密码</a>
-                </div>
+            <button class="registerBtn">立即登录</button>
+            <div class="tiShi">
+                <a href="../carefreeRoom/1-register.html">立即注册</a>
+                <a href="../carefreeRoom/1-findPassWord.html">忘记密码</a>
             </div>
-            <div class="fastLogin act" style="display: none;">
-                <ul>
-                    <li class="mima">
-                        <input type="text" class="input3" placeholder="请输入手机号码" />
-                        <a id="code" href="#">发送验证码</a>
-                    </li>
-                    <li><input type="text" class="input4" placeholder="请输入短信中的验证码" />
-                        <span class="ts1"></span>
-                    </li>
-                </ul>
-                <button class="registerBtn"> 验证并登录 </button>
-                <div class="tiShi">
-                    <a href="./1-register.html">立即注册</a>
-                    <a href="./1-findPassWord.html">忘记密码</a>
-                </div>
+        </div>
+        <div class="fastLogin act" style="display: none;">
+            <ul>
+                <li class="mima">
+                    <input type="text" class="input3" placeholder="请输入手机号码" />
+                    <a id="code" href="#">发送验证码</a>
+                </li>
+                <li><input type="text" class="input4" placeholder="请输入短信中的验证码" />
+                    <span class="ts1"></span>
+                </li>
+            </ul>
+            <button class="registerBtn"> 验证并登录 </button>
+            <div class="tiShi">
+                <a href="./1-register.html">立即注册</a>
+                <a href="./1-findPassWord.html">忘记密码</a>
             </div>
-        </form>
+        </div>
     </section>
 </body>
 
